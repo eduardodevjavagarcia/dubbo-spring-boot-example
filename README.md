@@ -1,22 +1,13 @@
-# Project with Dubbo and Spring Boot
-Application with Node and GraphQL
+# Project with Apache Dubbo and Spring Boot
+Application with Apache Dubbo and Spring Boot
 
 # Description
-This project was developed using Node and GraphQL. To test the project, you will need to download a Spring Boot program with some services. The Spring Boot project is in this github with the name **"Spring Boot Test Node GraphQL"**.
+This project was developed using Apache Dubbo and Spring Boot. To test the project, you must run both projects.
 
 # Initializing the Project
-Clone the project with command: **git clone** https://github.com/eduardodevjavagarcia/nodegraphql.git
-After cloning the project, you should go to the folder where the package is called **package.json**. In this folder you will have to execute the commands:
-- npm install - downloads all project dependencies
-- gulp build - build project
-- npm run start - start the project
-
-# Using the Application
-Access the url: http://localhost:3000/graphql
+Clone the projects and execute. For more information about Apache Dubbo, read the links below.
 
 # Main References
-- https://graphql.org/
-- https://19majkel94.github.io/type-graphql/
-- https://nodejs.org/en/
-- https://www.typescriptlang.org/
-- https://expressjs.com/
+- https://dubbo.apache.org/en-us/index.html
+- https://www.infoq.com/br/news/2019/06/apache-dubbo/
+- https://medium.com/@alitech_2017/exposing-services-in-dubbo-the-restful-way-basics-to-advanced-90bc36db73fb
