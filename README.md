@@ -1,17 +1,22 @@
+# Project with Dubbo and Spring Boot
+Application with Node and GraphQL
 
-## How to run
+# Description
+This project was developed using Node and GraphQL. To test the project, you will need to download a Spring Boot program with some services. The Spring Boot project is in this github with the name **"Spring Boot Test Node GraphQL"**.
 
-```bash
-./mvnw spring-boot:run
-```
+# Initializing the Project
+Clone the project with command: **git clone** https://github.com/eduardodevjavagarcia/nodegraphql.git
+After cloning the project, you should go to the folder where the package is called **package.json**. In this folder you will have to execute the commands:
+- npm install - downloads all project dependencies
+- gulp build - build project
+- npm run start - start the project
 
+# Using the Application
+Access the url: http://localhost:3000/graphql
 
-## Links
-
-* [Dubbo](https://github.com/apache/incubator-dubbo)
-* [Dubbo Spring Boot](https://github.com/apache/incubator-dubbo-spring-boot-project) - Spring Boot Project for Dubbo.
-* [Developer Mailing list](https://github.com/apache/incubator-dubbo/issues/1393) - Any questions or suggestions? [Subscribe](https://github.com/apache/incubator-dubbo/issues/1393) to (dev@dubbo.incubator.apache.org) to discuss with us.
-* [Gitter channel](https://gitter.im/alibaba/dubbo) - Online chat room with Dubbo developers.
-* [Dubbo user manual(English)](http://dubbo.apache.org/books/dubbo-user-book-en/) or [Dubbo用户手册(中文)](http://dubbo.apache.org/books/dubbo-user-book/) - Describe how to use Dubbo and all features of Dubbo concretely.
-* [Dubbo developer guide(English)](http://dubbo.apache.org/books/dubbo-dev-book-en/) or [Dubbo开发手册(中文)](http://dubbo.apache.org/books/dubbo-dev-book/) - Detailly introduce the design principal, extension mechanisms, code conventions, version control and building project, etc.
-* [Dubbo admin manual(English)](http://dubbo.apache.org/books/dubbo-admin-book-en/) or [Dubbo管理手册(中文)](http://dubbo.apache.org/books/dubbo-admin-book/) - Describe how to use Dubbo registry and admin-console.
+# Main References
+- https://graphql.org/
+- https://19majkel94.github.io/type-graphql/
+- https://nodejs.org/en/
+- https://www.typescriptlang.org/
+- https://expressjs.com/
