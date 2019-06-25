@@ -22,7 +22,7 @@ import br.com.dubbo.server.example.services.PersonService;
 @RestController
 public class PersonController {
 
-	@Reference(cache = "lru", version = "1.0.0", timeout = 300, actives = 0, retries = 2, loadbalance = "random")
+	@Reference(cache = "threadlocal", version = "1.0.0", timeout = 300, actives = 0, retries = 2, loadbalance = "random")
 	private PersonService personService;
 
 	@GetMapping
@@ -55,4 +55,13 @@ public class PersonController {
 		return ResponseEntity.ok(this.personService.delete(id));
 	}
 
+	@PostMapping("/batch")
+	public ResponseEntity<?> insertBatch(@RequestBody List<Person> persons) {
+
+		persons.forEach(person -> {
+			this.personService.save(person);
+		});
+
+		return new ResponseEntity<>(HttpStatus.CREATED);
+	}
 }

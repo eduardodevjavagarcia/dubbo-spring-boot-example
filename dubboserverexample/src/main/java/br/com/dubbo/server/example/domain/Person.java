@@ -10,8 +10,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -36,7 +34,6 @@ public class Person implements Serializable {
 	@Column(name = "age")
 	private Integer age;
 
-	@JsonFormat(timezone = "GMT")
 	@Column(name = "date_birth")
 	private LocalDate dateBirth;
 

@@ -17,7 +17,7 @@ import br.com.dubbo.server.example.services.PersonService;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-@Service(version = "1.0.0", executes = 200)
+@Service(version = "1.0.0", executes = 200, loadbalance = "random")
 @Transactional
 public class PersonServiceImpl implements PersonService {
 
